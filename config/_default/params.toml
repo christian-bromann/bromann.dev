@@ -5,14 +5,15 @@ author = "Christian Bromann"
 description = "Open Source & Open Standards Advocate"
 profilePicture = "images/me.jpg"
 keywords = ""
-favicon = "favicons/"
+# icon directory in /static/images
+favicon = "/images/icons"
 # example ["css/custom.css"]
 customCss = []
 # example ["js/custom.js"]
 customJs = [] 
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
-doNotLoadAnimations = false
+doNotLoadAnimations = true
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
 # Google Site Verify
