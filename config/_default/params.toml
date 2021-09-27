@@ -7,13 +7,13 @@ profilePicture = "images/me.jpg"
 keywords = ""
 # icon directory in /static/images
 favicon = "/images/icons"
-# example ["css/custom.css"]
-customCss = []
+customCss = ["css/custom.css"]
 # example ["js/custom.js"]
-customJs = [] 
+customJs = []
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = true
+googleFont = "Roboto:ital,wght@0,100;0,400;0,700;1,400"
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
 # Google Site Verify
