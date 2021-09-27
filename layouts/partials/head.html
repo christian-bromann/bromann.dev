@@ -86,10 +86,13 @@
           type="text/css"
       />
   {{- end -}}
-  {{ if .Site.Params.googleFont }}
+  {{ if .Site.Params.googleFonts }}
+      {{ $baseUrl := "https://fonts.googleapis.com/css2?family=" }}
+      {{ $fontParam := delimit .Site.Params.googleFonts "&family=" }}
+      {{ $url := printf "%s" "&display=swap" | printf "%s%s" $fontParam | printf "%s%s" $baseUrl | printf "%s" }}
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family={{ .Site.Params.googleFont }}&display=swap" rel="stylesheet">
+      <link href="{{ $url }}" rel="stylesheet">
   {{- end -}}
 
   <!-- Favicons -->
@@ -140,21 +143,11 @@
       {{- if $customJS -}}
         {{- if eq $js "" -}}
           {{- $js = $customJS -}}
-
-
         {{- else -}}
           {{- $js = slice $js $customJS | resources.Concat "js/custom.js" -}}
-
-
         {{- end -}}
-
-
       {{- end -}}
-
-
     {{- end -}}
-
-
   {{- end -}}
 
   {{- if ne $js "" -}}
