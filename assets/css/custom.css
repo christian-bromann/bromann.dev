@@ -54,10 +54,15 @@ header .nav__list a {
 header .nav__list a:hover,
 .sidebar .social-links a:hover,
 .post .post-content a,
+.post .post-content a:hover,
 .post .post-footer .meta a:hover,
 .footer a:hover,
 .list-with-title .listing .listing-post a:hover {
     color: var(--template-color-red);
+}
+
+.post .post-content a:hover {
+    text-decoration: underline;
 }
 
 .footer {
