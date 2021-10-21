@@ -84,6 +84,7 @@ header .nav__list a:hover,
 .post .post-content a,
 .post .post-content a:hover,
 .post .post-footer .meta a:hover,
+.post .post-footer .info .separator a.tag:hover,
 .footer a:hover,
 .list-with-title .listing .listing-post a:hover {
     color: var(--template-color-link);

@@ -158,8 +158,14 @@
       integrity="{{ $secureJS.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
-
   {{- end -}}
+
+  <!-- Service Worker -->
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+  }
+  </script>
 
   <!-- Twitter Cards -->
   {{ template "_internal/twitter_cards.html" . }}
