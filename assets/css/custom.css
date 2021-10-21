@@ -1,9 +1,23 @@
 :root {
-    --template-color-red: #c02028;
+    --template-color-link: #c02028;
+    --template-color-heading: #212945;
+}
+
+html[data-theme=dark] {
+    --template-color-heading: #b9c7f7;
+    --body-color: rgb(215, 215, 235);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+header .nav__list li {
+    padding-right: 20px;
+}
+header .nav__list li:last-child {
+    padding-right: 0;
+    margin-left: auto;
 }
 
 p {
@@ -33,6 +47,20 @@ header .nav__list a.current {
     font-family: 'Indie Flower', cursive;
 }
 
+.post .post-title a,
+.post .post-title h1,
+.listing-title {
+    color: var(--template-color-heading);
+}
+
+.post .post-footer .info .separator a {
+    color: var(--body-color);
+}
+
+.p_part {
+    font-size: .8em;
+}
+
 .post .post-content a {
     letter-spacing: inherit;
 }
@@ -58,7 +86,7 @@ header .nav__list a:hover,
 .post .post-footer .meta a:hover,
 .footer a:hover,
 .list-with-title .listing .listing-post a:hover {
-    color: var(--template-color-red);
+    color: var(--template-color-link);
 }
 
 .post .post-content a:hover {
