@@ -13,12 +13,10 @@
           <a
             {{ if $active }}
               class="current"
-
             {{ end }}
             href="{{ .URL }}"
             {{ if strings.HasPrefix .URL "http" }}
               target="_blank" rel="noopener noreferrer"
-
             {{ end }}
             title="{{ .Title }}"
             >{{ .Name }}</a
@@ -35,7 +33,6 @@
           <a class="theme-switch" title="Switch Theme">
             <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
           </a>
-
         {{ end }}
       </li>
     </ul>
