@@ -20,6 +20,10 @@ header .nav__list li:last-child {
     margin-left: auto;
 }
 
+.page-top nav.is-active {
+    z-index: 10;
+}
+
 p {
     font-size: 1.4em;
 }
@@ -101,5 +105,31 @@ header .nav__list a:hover,
 @media screen and (max-width: 960px) {
     .particles-js-canvas-el {
         display: none;
+    }
+
+    header {
+        z-index: 40;
+    }
+
+    .navbar-burger {
+        height: 4.25rem;
+        width: 5.25rem;
+        position: absolute;
+        right: 0;
+        z-index: 15;
+    }
+    .navbar-burger span {
+        left: calc(50% - 15px);
+        height: 2px;
+        width: 30px;
+    }
+    .navbar-burger span:nth-child(1) {
+        top: calc(50% - 8px);
+    }
+    .navbar-burger span:nth-child(2) {
+        top: calc(50%);
+    }
+    .navbar-burger span:nth-child(3) {
+        top: calc(50% + 8px);
     }
 }
