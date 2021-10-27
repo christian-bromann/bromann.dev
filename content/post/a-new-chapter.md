@@ -15,7 +15,7 @@ categories = [
 series = ["Personal Development"]
 +++
 
-Hello World!
+Hello World! You 🤘!
 
 ```js
 console.log('foobar')
