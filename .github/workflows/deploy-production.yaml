@@ -1,0 +1,64 @@
+# deploy-production.yaml
+
+# Workflow to build and deploy site to Vercel using Hugo
+# Name of Workflow
+name: deploy-production
+
+# Controls when the action will run. Triggers the workflow on push
+# events but only for the main/master branch
+on:
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "deploy-production"
+  deploy-production:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-20.04
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+    # Initiate deployment status
+    - name: Start Deployment
+      uses: bobheadxi/deployments@v0.4.3
+      id: deployment
+      with:
+        step: start
+        token: ${{ secrets.GITHUB_TOKEN }}
+        env: Production
+
+    # Step 2 - Install Hugo (specific version)
+    - name: Install Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: '0.79.1'
+
+    # Step 3 - Builds the site using Hugo
+    - name: Build
+      run: hugo -v --minify
+
+    # Step 4 - Push our generated Hugo site to Vercel
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v20
+      id: vercel-action
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+        #github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}  #Required
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
+        github-comment: false
+        vercel-args: '--prod'
+        working-directory: public
+
+    # Update deployment status
+    - name: Update Deployment Status
+      uses: bobheadxi/deployments@v0.4.3
+      if: always()
+      with:
+        step: finish
+        token: ${{ secrets.GITHUB_TOKEN }}
+        status: ${{ job.status }}
+        deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+        env_url: ${{ steps.vercel-action.outputs.preview-url }}
