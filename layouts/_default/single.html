@@ -46,8 +46,9 @@
           {{ partial "taxonomy/tags.html" . }}
         {{ end }}
       </div>
+      {{ $pageurl := .Permalink }}
+      {{ if eq .Section "post" }}
       <div class="share-btns">
-        {{ $pageurl := .Permalink }}
         <span>Share on:</span>
         <div>
           <a class="facebook" href="http://www.facebook.com/share.php?u={{ $pageurl }}">
@@ -79,6 +80,7 @@
           </a>
         </div>
       </div>
+      {{ end }}
     </div>
 
     {{ if and (or (eq .Type "post") (eq .Type .Site.Params.postSectionName)) (ne .Page.Params.disableComments true) }}

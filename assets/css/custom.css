@@ -139,11 +139,11 @@ header .nav__list a:hover,
     cursor: pointer;
 }
 
-.share-btns > div > a.facebook:hover > svg { fill: #3B5998; }
-.share-btns > div > a.twitter:hover > svg { fill: #55ACEE; }
-.share-btns > div > a.linkedin:hover > svg { fill: #0077b5; }
-.share-btns > div > a.pinterest:hover > svg { fill: #CB2027; }
-.share-btns > div > a.mail:hover > svg { fill: #7D7D7D; }
+.share-btns > div > a.facebook:hover > svg { fill: var(--template-color-link) } /* #3B5998; } */
+.share-btns > div > a.twitter:hover > svg { fill: var(--template-color-link) } /* #55ACEE; } */
+.share-btns > div > a.linkedin:hover > svg { fill: var(--template-color-link) } /* #0077b5; } */
+.share-btns > div > a.pinterest:hover > svg { fill: var(--template-color-link) } /* #CB2027; } */
+.share-btns > div > a.mail:hover > svg { fill: var(--template-color-link) } /* #7D7D7D; } */
 
 .share-btns > div > a.facebook > svg {
     height: 18px;
