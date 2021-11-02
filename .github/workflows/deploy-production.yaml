@@ -37,8 +37,8 @@ jobs:
 
     - name: Update Service Worker
       run: |
-        npm install replace-in-files
-        npx replace-in-files --regex=\"CACHE_VERSION = \\d+\" --replacement=\"CACHE_VERSION = ${GITHUB_RUN_NUMBER}\" ./static/sw.js
+        npm install -g replace-in-files-cli
+        replace-in-files --regex=\"CACHE_VERSION = \\d+\" --replacement=\"CACHE_VERSION = ${GITHUB_RUN_NUMBER}\" ./static/sw.js
 
     - name: Install Hugo
       uses: peaceiris/actions-hugo@v2
