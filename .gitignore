@@ -2,3 +2,5 @@
 public
 
 .vercel
+static/sw*
+static/workbox*
