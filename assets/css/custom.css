@@ -102,6 +102,73 @@ header .nav__list a:hover,
     z-index: 30;
 }
 
+.post-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-footer > div {
+    margin: 10px 0;
+}
+.share-btns > span {
+    color: silver;
+}
+.share-btns > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.share-btns > div:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.share-btns > div > a {
+    position: relative;
+    text-align: left;
+    height: 36px;
+    width: 32px;
+    float: left;
+    text-align: center;
+}
+.share-btns > div > a > svg {
+    height: 16px;
+    fill: #d5d5d5;
+    margin-top: 10px;
+}
+.share-btns > div > a:hover {
+    cursor: pointer;
+}
+
+.share-btns > div > a.facebook:hover > svg { fill: var(--template-color-link) } /* #3B5998; } */
+.share-btns > div > a.twitter:hover > svg { fill: var(--template-color-link) } /* #55ACEE; } */
+.share-btns > div > a.linkedin:hover > svg { fill: var(--template-color-link) } /* #0077b5; } */
+.share-btns > div > a.pinterest:hover > svg { fill: var(--template-color-link) } /* #CB2027; } */
+.share-btns > div > a.mail:hover > svg { fill: var(--template-color-link) } /* #7D7D7D; } */
+
+.share-btns > div > a.facebook > svg {
+    height: 18px;
+    margin-top: 9px;
+}
+.share-btns > div > a.twitter {
+    background: none;
+}
+.share-btns > div > a.twitter > svg {
+    height: 20px;
+    margin-top: 8px;
+}
+.share-btns > div > a.linkedin > svg {
+    height: 19px;
+    margin-top: 7px;
+}
+.share-btns > div > a.pinterest > svg {
+    height: 20px;
+    margin-top: 9px;
+}
+.share-btns > div > a.mail > svg {
+    height: 14px;
+    margin-top: 11px;
+}
+
 @media screen and (max-width: 960px) {
     .particles-js-canvas-el {
         display: none;
