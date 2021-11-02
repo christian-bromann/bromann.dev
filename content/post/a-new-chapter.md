@@ -1,7 +1,7 @@
 +++
 author = "Christian Bromann"
 title = "Starting a new chapter at ActiveCove"
-date = "2021-11-02"
+date = "2021-11-04"
 description = "I am leaving Sauce Labs and starting a new professional chapter at ActiveCove. This is a recap about my journey and what I've learned."
 tags = [
     "personal",

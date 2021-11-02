@@ -1,4 +1,5 @@
 :root {
+    --template-color-white: #fff;
     --template-color-link: #c02028;
     --template-color-heading: #212945;
     --template-main-font: 'Roboto', sans-serif;
@@ -8,6 +9,12 @@
 html[data-theme=dark] {
     --template-color-heading: #aacdf7;
     --body-color: rgb(215, 215, 235);
+}
+
+::selection {
+    background: var(--template-color-link);
+    color: var(--template-color-white);
+    text-shadow: none
 }
 
 body {
@@ -61,6 +68,11 @@ header .nav__list a.current {
 
 .post .post-footer .info .separator a {
     color: var(--body-color);
+}
+
+.post .post-footer .meta .info {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .p_part {
