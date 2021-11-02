@@ -1,15 +1,30 @@
 :root {
+    --template-color-white: #fff;
     --template-color-link: #c02028;
     --template-color-heading: #212945;
+    --template-main-font: 'Roboto', sans-serif;
+    --template-heading-font: 'Indie Flower', 'Comic Sans MS', sans-serif;
 }
 
 html[data-theme=dark] {
-    --template-color-heading: #b9c7f7;
+    --template-color-heading: #aacdf7;
     --body-color: rgb(215, 215, 235);
 }
 
+::selection {
+    background: var(--template-color-link);
+    color: var(--template-color-white);
+    text-shadow: none
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--template-main-font);
+}
+
+.post-title h1,
+.post-title h3 a,
+.listing-title {
+    font-family: var(--template-heading-font);
 }
 
 header .nav__list li {
@@ -45,12 +60,6 @@ header .nav__list a.current {
     z-index: 10;
 }
 
-.post-title h1,
-.post-title h3 a,
-.listing-title {
-    font-family: 'Indie Flower', cursive;
-}
-
 .post .post-title a,
 .post .post-title h1,
 .listing-title {
@@ -61,12 +70,23 @@ header .nav__list a.current {
     color: var(--body-color);
 }
 
+.post .post-footer .meta .info {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .p_part {
     font-size: .8em;
 }
 
 .post .post-content a {
     letter-spacing: inherit;
+}
+
+.post-content > aside {
+    width: 100%;
+    position: relative;
+    bottom: 20px;
 }
 
 header .nav__list a {
