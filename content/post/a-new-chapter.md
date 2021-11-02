@@ -1,7 +1,7 @@
 +++
 author = "Christian Bromann"
 title = "Starting a new chapter at ActiveCove"
-date = "2021-11-05"
+date = "2021-11-02"
 description = "I am leaving Sauce Labs and starting a new professional chapter at ActiveCove. This is a recap about my journey and what I've learned."
 tags = [
     "personal",
@@ -24,7 +24,7 @@ I remember very vividly how everything started. In 2013 I participated my first 
 If you don't know me, you should be aware that I grew up on the country side next to 🐔 and a bunch of cow 💩. Moving to Berlin was already such a big step for me. Then in 2014 I found myself on an airplane to San Francisco on an H1B visa. It my first trip to a different continent ever. I remember that I had so many "What the f***" moments during these 3 months internship. My biggest one was right at the first day at Sauce, which was my birthday and also the first day of a conference, called JavaOne, apparently one of the biggest conference events in the industry (at that time). They had all of Treasure Island and whole street lanes blocked just for this event. I was only able to go because someone from Sauce couldn't make it and I was the last intern in the office. Who would have thought that I would end up at a huge carnival for grown ups, where everything was free, including a live concert from Aerosmith and Macklemore live. I realized quickly how different the mentality was compared to Germany. "Work hard, play hard!" is what I often heard and it really resonated with. For the first time I worked with people that didn't just show up to work and earn one's living, they came to build something they were passionate about. I liked that a lot.
 
 ![My first all-nighter](/images/a-new-chapter/internship.jpeg 'My first all-nighter')
-<small>The first time I stayed over hours with the team to hit an important deadline.</small>
+<aside>The first time I stayed over hours with the team to hit an important deadline.</aside>
 
 During my internship and my following years as contractor and full time employee in Berlin I went through almost all engineering teams Sauce Labs had. From a small web team that had to migrate a Python application to a more modern web stack (at that time) with Angular and Django, to founding and leading an Open Source Program Office. During all these years I continued my open source work on WebdriverIO which helped me to not only pick up technical skills but also understand our customer very well. It continued to grow over the years and as more people started using it the more feedback I was able to receive, which helped me to envision new product features which I was able to bring onto the platform. I am very grateful that so many people at Sauce Labs believed in my vision, from [capturing HAR files and mocking browser requests](https://www.youtube.com/watch?v=pkWv-JIf4eo) using Chrome DevTools to testing the [performance of web applications](https://www.youtube.com/watch?v=rP-j9uPPbt8) with WebDriver. As my interest in open source and open standards has grown, I build together a vision for a new team that should be responsible for how Sauce Labs not only consumes open source but also distributes it. That vision became the [Open Source Program Office](https://opensource.saucelabs.com/) which has been the last team I was delighted to work with. For many years I initiated my own teams which is probably not possible in every company but has shown me that if you have an idea and people that believe in it, you can have a big impact in a growing start-up.
 

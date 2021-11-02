@@ -14,7 +14,7 @@ images = ["images/site-feature-image.png"]
 doNotLoadAnimations = true
 googleFonts = [
     "Indie+Flower",
-    "Roboto:ital,wght@0,100;0,400;0,700;1,400"
+    "Roboto:ital,wght@0,400;0,700"
 ]
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
