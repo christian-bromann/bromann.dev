@@ -35,10 +35,10 @@ jobs:
       with:
         node-version: 16
 
-    - name: Update Service Worker
+    - name: Build Service Worker
       run: |
-        npm install -g replace-in-files-cli
-        replace-in-files --regex="CACHE_VERSION = \d+" --replacement="CACHE_VERSION = ${GITHUB_RUN_NUMBER}" ./static/sw.js
+        npm install -g workbox-cli
+        workbox generateSW workbox-config.js
 
     - name: Install Hugo
       uses: peaceiris/actions-hugo@v2
