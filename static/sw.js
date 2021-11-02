@@ -2,12 +2,12 @@ const CACHE_VERSION = 1
 
 const BASE_CACHE_FILES = [
     '/site.webmanifest',
-    '/images/favicon.ico',
+    '/images/*',
 ]
 
 const OFFLINE_CACHE_FILES = [
-    '/js/script.min.js',
-    '/css/style.min.css',
+    '/js/*',
+    '/css/*',
     '/offline/index.html',
 ]
 
@@ -33,9 +33,9 @@ const MAX_TTL = {
 }
 
 const CACHE_BLACKLIST = [
-    //(str) => {
-    //    return !str.startsWith('http://localhost') && !str.startsWith('https://gohugohq.com')
-    //},
+    (str) => !str.startsWith('http://localhost'),
+    (str) => !str.startsWith('https://bromann.dev'),
+    (str) => !str.includes('vercel.app')
 ]
 
 const SUPPORTED_METHODS = [
@@ -208,6 +208,7 @@ self.addEventListener('fetch', event => event.respondWith(
             }
 
             return fetch(event.request.clone()).then((response) => {
+                console.log('AHHH', event.request.url, response.status);
                 if(response.status < 400) {
                     if (~SUPPORTED_METHODS.indexOf(event.request.method) && !isBlacklisted(event.request.url)) {
                         cache.put(event.request, response.clone())

@@ -160,13 +160,11 @@
   {{- end -}}
 
   <!-- Service Worker -->
-  {{ if eq hugo.Environment "production" }}
   <script>
   if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/' })
   }
   </script>
-  {{ end }}
 
   <!-- Twitter Cards -->
   {{ template "_internal/twitter_cards.html" . }}
