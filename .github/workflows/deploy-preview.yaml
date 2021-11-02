@@ -37,7 +37,7 @@ jobs:
 
     - name: Update Service Worker
       run: |
-        npm install replace-in-files
+        npm install -g replace-in-files
         replace-in-files --regex=\"CACHE_VERSION = \\d+\" --replacement=\"CACHE_VERSION = ${GITHUB_RUN_NUMBER}\" ./static/sw.js
 
     - name: Install Hugo
