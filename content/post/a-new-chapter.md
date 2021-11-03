@@ -13,7 +13,6 @@ categories = [
     "activecove",
 ]
 series = ["Personal Development"]
-draft = true
 +++
 
 After more than 7 years I am closing my first big career chapter and leave [Sauce Labs](https://saucelabs.com/) to join a small Silicon Valley startup. It has been a wild ride with a lot of moments I won't forget and I can't say it often enough how grateful I am to see this company growing from 70 to more than 540 people and 4 company acquisitions.
