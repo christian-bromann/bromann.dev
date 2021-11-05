@@ -19,6 +19,10 @@ html[data-theme=dark] {
     --template-color-links: #FFC100;
 }
 
+html, body {
+    height: 100%;
+}
+
 ::selection {
     background: var(--template-color-links);
     color: var(--template-color-first);
@@ -95,6 +99,10 @@ header .nav__list a.current {
     z-index: 10;
 }
 
+.post .post-footer {
+    border-bottom: 0;
+}
+
 .post .post-footer .info .separator a {
     color: var(--body-color);
 }
@@ -144,6 +152,10 @@ header .nav__list a:hover,
     color: var(--template-color-links);
 }
 
+.sidebar .footer a:hover {
+    color: var(--template-color-first);
+}
+
 .sidebar .social-links a:hover {
     color: var(--template-color-third);
 }
@@ -154,6 +166,7 @@ header .nav__list a:hover,
 
 .footer {
     z-index: 30;
+    border-top: 0;
 }
 
 .post-footer {
@@ -232,17 +245,37 @@ header .nav__list a:hover,
         z-index: 40;
     }
 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer {
+        margin-top: auto;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .sidebar {
+        padding-bottom: 60px;
+    }
+
     .navbar-burger {
         height: 4.25rem;
         width: 5.25rem;
         position: absolute;
         right: 0;
         z-index: 15;
+        padding: 10px;
     }
     .navbar-burger span {
+        background-color: var(--template-color-first);
         left: calc(50% - 15px);
         height: 2px;
         width: 30px;
+    }
+    .navbar-burger.is-active > span {
+        background-color: var(--template-color-heading);
     }
     .navbar-burger span:nth-child(1) {
         top: calc(50% - 8px);
@@ -252,5 +285,14 @@ header .nav__list a:hover,
     }
     .navbar-burger span:nth-child(3) {
         top: calc(50% + 8px);
+    }
+
+    .content {
+        margin-top: 60px;
+    }
+
+    .footer a {
+        background-color: var(--body-first);
+        color: inherit;
     }
 }
