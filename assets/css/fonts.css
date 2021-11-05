@@ -2,7 +2,7 @@
     font-family: IBMPlexSans;
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: fallback;
     src: url('/fonts/IBMPlexSans-Regular.woff') format('woff'),
          url('/fonts/IBMPlexSans-Regular.ttf') format('truetype');
 }
@@ -11,7 +11,7 @@
     font-family: IBMPlexMono;
     font-style: italic;
     font-weight: 400;
-    font-display: swap;
+    font-display: fallback;
     src: url('/fonts/IBMPlexMono-Italic.woff') format('woff'),
          url('/fonts/IBMPlexMono-Italic.ttf') format('truetype');
 }
@@ -20,7 +20,7 @@
     font-family: IBMPlexMono;
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: fallback;
     src: url('/fonts/IBMPlexMono-Regular.woff') format('woff'),
          url('/fonts/IBMPlexMono-Regular.ttf') format('truetype');
 }
