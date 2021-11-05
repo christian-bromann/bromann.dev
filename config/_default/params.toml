@@ -15,10 +15,7 @@ customJs = ["js/particles.js"]
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 doNotLoadAnimations = true
-googleFonts = [
-    "Indie+Flower",
-    "Roboto:ital,wght@0,400;0,700"
-]
+googleFonts = []
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
 # Google Site Verify
