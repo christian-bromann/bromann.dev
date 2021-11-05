@@ -8,7 +8,7 @@ keywords = ""
 # icon directory in /static/images
 favicon = "/images/icons"
 customCss = [
-    "css/fonts.css"
+    "css/fonts.css",
     "css/custom.css"
 ]
 customJs = ["js/particles.js"]
