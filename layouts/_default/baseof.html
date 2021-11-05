@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html
+  dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+  lang="{{- site.Language.Lang -}}"
+  data-theme="{{- .Site.Params.displayMode -}}"
+>
+  {{- partial "head.html" . -}}
+  <body>
+    <header>{{ partial "navbar.html" . }}</header>
+    <div class="wrapper">
+      <aside>
+        {{- partial "sidebar.html" . -}}
+      </aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+            {{- block "main" . }}{{- end }}
+          </div>
+        </div>
+      </main>
+
+      {{- partial "footer.html" (dict "context" . "footerClassModifier" "base") -}}
+    </div>
+
+    {{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
+      {{- partial "analytics/simpleanalytics.html" . -}}
+    {{- end -}}
+
+    {{- partial "medium-zoom.html" -}}
+    {{- partial "math.html" -}}
+
+    {{- template "_internal/google_analytics_async.html" . -}}
+  </body>
+</html>
