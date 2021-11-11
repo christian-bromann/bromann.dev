@@ -43,9 +43,7 @@ jobs:
           hugo-version: '0.79.1'
 
     - name: Build
-      run: |
-        ls -la
-        hugo -v --minify
+      run: hugo -v --minify
 
     - uses: actions/setup-node@v2
       with:
@@ -55,8 +53,6 @@ jobs:
       run: |
         npm install -g workbox-cli
         workbox generateSW workbox-config.js
-
-    - run: cat ./public/index.xml
 
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v20
