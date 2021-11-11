@@ -18,6 +18,11 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
+[author]
+    name = "Christian Bromann"
+    homepage = "https://bromann.dev"
+    email = "mail@bromann.dev"
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
