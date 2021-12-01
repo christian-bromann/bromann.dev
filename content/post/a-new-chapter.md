@@ -1,16 +1,16 @@
 +++
 author = "Christian Bromann"
-title = "Starting a new chapter at ActiveCove"
+title = "Starting a new chapter at Stateful"
 date = "2021-11-05"
-description = "I am leaving Sauce Labs and starting a new professional chapter at ActiveCove. This is a recap about my journey and what I've learned."
+description = "I am leaving Sauce Labs and starting a new professional chapter at Stateful. This is a recap about my journey and what I've learned."
 tags = [
     "personal",
     "career",
-    "activecove",
+    "stateful",
 ]
 categories = [
     "personal",
-    "activecove",
+    "stateful",
 ]
 series = ["Personal Development"]
 +++
@@ -30,4 +30,4 @@ During my internship and my following years as contractor and full time employee
 
 Leaving a company, especially after spending such a long time working for it, is always hard. I've been enjoying working for Sauce Labs and will never forget the time I spent with this company. At some point however you have to reflect on what is best for you, your career and your professional development. Spending too much time in a certain environment can lead you to become less focused, concentrated and passionate on what you do. If you stop challenging yourself regularly you will lose the grip you need to make an impact. After so many years at Sauce it felt it would be impossible that I will ever do something else. Being confronted with a new opportunity made me reevaluate my situation. Even though I was a happy employee I am fully convinced that moving on was the right decision. At the end of the day there is never the right time to move on and like [@alexandracoding](https://twitter.com/alexandracoding) perfectly summarizes in here excellent [twitter thread](https://twitter.com/alexandracoding/status/1448349624939466753?s=21), it is not worth waiting for it.
 
-I will join [ActiveCove](https://www.activecove.com/) as founding engineer with Adam and Sebastian as founders. I am very excited that the two people that opened my first professional chapter, will also open the second one. I will move from the browser and mobile automation space into a new environment that is focused on building tools that help to increase developer happiness. You can [read more](https://www.activecove.com/blog/starting-activecove-inc) about our vision on helping developers maintain sustainable working habits and take control of their personal growth. And if you are interested to join us on this vision, feel free to [reach out](mailto:mail@bromann.dev)!
+I will join [Stateful](https://www.stateful.com/) as founding engineer with Adam and Sebastian as founders. I am very excited that the two people that opened my first professional chapter, will also open the second one. I will move from the browser and mobile automation space into a new environment that is focused on building tools that help to increase developer happiness. You can [read more](https://www.stateful.com/company) about our vision on helping developers maintain sustainable working habits and take control of their personal growth. And if you are interested to join us on this vision, feel free to [reach out](mailto:mail@bromann.dev)!

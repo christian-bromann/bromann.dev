@@ -7,7 +7,7 @@ author = "Christian Bromann"
 excludeFromRSS = 1
 +++
 
-Founding Engineer at [ActiveCove](https://activecove.com/) measuring and improving developer happiness every day a bit more. Open Source and Open Standards Advocate. Cross Project Council member at the [OpenJS Foundation](https://openjsf.org/) representing [WebdriverIO](https://webdriver.io/).
+Founding Engineer at [Stateful](https://stateful.com/) measuring and improving developer happiness every day a bit more. Open Source and Open Standards Advocate. Cross Project Council member at the [OpenJS Foundation](https://openjsf.org/) representing [WebdriverIO](https://webdriver.io/).
 
 I am writing a lot of Open Source code, check out some of these projects [on my GitHub profile](https://github.com/christian-bromann). Always looking out 👀  &nbsp;for contributions.
 
