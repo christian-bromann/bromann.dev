@@ -18,7 +18,7 @@ images = [
 series = ["VSCode Extension Development"]
 +++
 
-> This blog post was originally posted on the [Stateful blog](https://stateful.com/blog/telephone-game-of-postmessage).
+> The original version of this blog post was posted on the [Stateful blog](https://stateful.com/blog/telephone-game-of-postmessage).
 
 In this post you will learn how to use the new JS/TS module [Tangle](https://github.com/stateful/tangle) to implement seamless event handling and app state sync across multiple JavaScript sandboxes without getting caught up in postMessage & onMessage synchronization dilemmas.
 
