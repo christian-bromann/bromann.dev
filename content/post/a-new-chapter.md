@@ -13,6 +13,7 @@ categories = [
     "stateful",
 ]
 series = ["Personal Development"]
+images = ["/images/a-new-chapter/internship.jpeg"]
 +++
 
 After 7 years at [Sauce Labs](https://saucelabs.com/), I have decided to take the next step in my career to join a small startup with a mission I am very passionate about. My time at Sauce Labs has been a wild, yet rewarding ride. I feel grateful to have seen this company grow from 70 to over 540 people and experience four acquisitions! In my first "official" blog post, I would love to take some time to recap my journey. It will probably be a bit long and non technical. If you’d like to read along, there will be some learnings that I feel can help anyone in their career. I hope you enjoy it!

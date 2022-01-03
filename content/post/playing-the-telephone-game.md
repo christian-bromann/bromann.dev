@@ -12,6 +12,9 @@ categories = [
     "vscode",
     "stateful",
 ]
+images = [
+    "https://media.graphcms.com/HLTh3fPfQPS42DGLcb4Q"
+]
 series = ["VSCode Extension Development"]
 +++
 
