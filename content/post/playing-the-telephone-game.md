@@ -1,7 +1,7 @@
 +++
 author = "Christian Bromann"
 title = "Sync App State across JS Sandboxes without Stumbling over postMessage & onMessage Playing “Telephone”"
-date = "2021-12-23"
+date = "2022-01-23"
 description = "In this post you will learn how to use the new JS/TS module Tangle to implement seamless event handling and app state sync across multiple JavaScript sandboxes without getting caught up in postMessage & onMessage synchronization dilemmas."
 tags = [
     "vscode",
