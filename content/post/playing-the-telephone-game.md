@@ -18,9 +18,9 @@ images = [
 series = ["VSCode Extension Development"]
 +++
 
-> This blog post was originally posted on the [Stateful blog](https://stateful.com/blog/telephone-game-of-postmessage).
+> In this post you will learn how to use the new JS/TS module [Tangle](https://github.com/stateful/tangle) to implement seamless event handling and app state sync across multiple JavaScript sandboxes without getting caught up in postMessage & onMessage synchronization dilemmas.
 
-In this post you will learn how to use the new JS/TS module [Tangle](https://github.com/stateful/tangle) to implement seamless event handling and app state sync across multiple JavaScript sandboxes without getting caught up in postMessage & onMessage synchronization dilemmas.
+The original version of this blog post was posted on the [Stateful blog](https://stateful.com/blog/telephone-game-of-postmessage).
 
 You've played it with your friends as a child: the telephone game, a little interactive exercise where it is important to understand a message from your left partner and transmit it correctly to your right one. The catch: you have to whisper it so that no one, other than the actual receiver understands the message. It feels a lot like trying to share events or a app state across different JavaScript sandboxes, e.g. between [Inline Frames](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API#web_workers_concepts_and_usage), [Worker Threads](https://nodejs.org/api/worker_threads.html) or webviews in [VS Code](https://code.visualstudio.com/) extensions.
 
