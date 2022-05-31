@@ -19,6 +19,8 @@ images = ["/images/development-environment-for-webdriverio/hero.png"]
 series = []
 +++
 
+> I've taken Gitpod for a spin to check out if I could create a perfect dev environment for WebdriverIO to lower the barrier for contributions and speed up the onboarding process. In this blog post I will share my experience and the results of this experiment.
+
 Over the years the WebdriverIO project has grown in complexity especially with the move to a [Lerna](https://lerna.js.org/) monorepo and the transition to TypeScript. While we as core maintainers feel more or less comfortable in this environment, as we have been working with it for so long, we can __not__ expect this from every contributor of the project. Allowing everyone to make contributions is important to us and the time it takes to set up the project and get up and running quickly is critical to achieve this goal. That is why we are collaborating with [Gitpod](https://www.gitpod.io/) to provide instant ephemeral development environments for all 🙌
 
 Gitpod is an open source developer platform that tries to remove all friction from the developer experience to be always ready-to-code and make software engineering more collaborative, joyful, and secure<sup>[1](https://www.gitpod.io/about)</sup>. They provide a [complimentary professional open source plan](https://www.gitpod.io/for/opensource) that allows all open source projects to leverage the capabilities of their platform for all your contributors.
