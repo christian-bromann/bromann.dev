@@ -1,7 +1,7 @@
 +++
 author = "Christian Bromann"
 title = "An Instant Development Environment for WebdriverIO"
-date = "2022-05-16"
+date = "2022-05-31"
 description = "I've taken Gitpod for a spin to check out if I could create a perfect dev environment for WebdriverIO to lower the barrier for contributions and speed up the onboarding process. In this blog post I will share my experience and the results of this experiment."
 tags = [
     "gitpod",
