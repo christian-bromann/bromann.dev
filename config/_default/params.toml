@@ -52,6 +52,12 @@ title = "GitHub"
 url = "https://github.com/christian-bromann"
 
 [[socialIcons]]
+icon = "fab fa-mastodon"
+title = "Mastodon"
+rel = "me"
+url = "https://mastodon.social/@bromann"
+
+[[socialIcons]]
 icon = "fab fa-twitter"
 title = "Twitter"
 url = "https://twitter.com/bromann"
