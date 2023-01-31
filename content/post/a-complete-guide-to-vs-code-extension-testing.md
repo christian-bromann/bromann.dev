@@ -51,7 +51,7 @@ npm create wdio ./
 
 An installation wizard will guide you through the process. Ensure you select TypeScript as compiler and decline the page objects (batteries already included). Then make sure to select `vscode` within the list of services:
 
-![demo.gif](https://media.graphassets.com/Jc6sNwiQAGCZ50f9JkSj)
+![demo.gif](/images/vscode-setup.gif)
 
 After the wizard has installed all required NPM packages, you should see a `wdio.conf.ts` in the root directory of your project. Open the file and update the `capabilities` property to this:
 
