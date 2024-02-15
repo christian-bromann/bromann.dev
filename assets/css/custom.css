@@ -296,3 +296,7 @@ header .nav__list a:hover,
         color: inherit;
     }
 }
+
+.post .post-content ol {
+    font-size: 2rem;
+}
