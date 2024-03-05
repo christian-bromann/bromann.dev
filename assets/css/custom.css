@@ -300,3 +300,12 @@ header .nav__list a:hover,
 .post .post-content ol {
     font-size: 2rem;
 }
+
+th, td {
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.post .post-content ul {
+    font-size: 2.4rem;
+}
